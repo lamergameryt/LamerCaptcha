@@ -50,7 +50,7 @@ With Maven:
 ```xml
 <dependency>
     <groupId>com.github.lamergameryt</groupId>
-    <artifactId>lamercaptcha</artifactId>
+    <artifactId>LamerCaptcha</artifactId>
     <version>JITPACK-VERSION</version>
 </dependency>
 ```
@@ -66,7 +66,7 @@ With Gradle:
 
 ```groovy
 dependencies {
-    implementation 'com.github.lamergameryt:lamercaptcha:JITPACK-VERSION'
+    implementation 'com.github.lamergameryt:LamerCaptcha:JITPACK-VERSION'
 }
 repositories {
     maven { url 'https://jitpack.io' }
