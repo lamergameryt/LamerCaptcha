@@ -13,9 +13,33 @@
 
 ### ✨ [Captcha Outputs](https://github.com/lamergameryt/LamerCaptcha/examples/)
 
+Example:
 <img alt="Captcha Output" src="./examples/captcha_cp2b3f.png" />
 
 For an audio output, visit: [Audio Output](https://github.com/lamergameryt/LamerCaptcha/examples/)
+
+## 📖 Usage
+
+Image Based Captcha:
+
+```java
+Captcha captcha = new Captcha.Builder(150, 50)  // 150x50 image dimensions.
+        .addBackground()  // Default: Pink Gradient
+        .addBorder()  // Add a black border.
+        .addText()  // Generate a captcha of five characters.
+        .addNoise()  // Create a curved line noise.
+        .build();
+```
+
+Audio Based Captcha:
+
+```java
+AudioCaptcha captcha = new AudioCaptcha.Builder()
+        .addNoise()  // Add background noise.
+        .addAnswer()  // Add randomized captcha audio.
+        .addVoice()  // Add voices used for speaking out the captcha.
+        .build();
+```
 
 ## 📩 Installation
 
@@ -47,29 +71,6 @@ dependencies {
 repositories {
     maven { url 'https://jitpack.io' }
 }
-```
-
-## 📖 Usage
-
-Image Based Captcha:
-
-```java
-Captcha captcha = new Captcha.Builder(150, 50)  // 150x50 image dimensions
-        .addBackground()  // Default: Pink Gradient
-        .addBorder()  // Add a black border.
-        .addText()  // Generate a captcha of five characters.
-        .addNoise()  // Create a curved line noise.
-        .build();
-```
-
-Audio Based Captcha:
-
-```java
-AudioCaptcha captcha = new AudioCaptcha.Builder()
-        .addNoise()  // Add background noise.
-        .addAnswer()  // Add randomized captcha audio.
-        .addVoice()  // Add voices used for speaking out the captcha.
-        .build();
 ```
 
 ## 💖 Show your support
