@@ -1,7 +1,10 @@
 <h1 style="text-align: center;">Welcome to LamerCaptcha 👋</h1>
 <p>
-  <a href="https://jitpack.io/#lamergameryt/LamerCaptcha">
-    <img alt="JitPack Version" src="https://img.shields.io/jitpack/v/github/lamergameryt/LamerCaptcha?style=flat-square" />
+  <a href="https://search.maven.org/artifact/com.lamergameryt/lamercaptcha">
+    <img alt="Maven Central" src="https://img.shields.io/maven-central/v/com.lamergameryt/lamercaptcha?style=flat-square">
+  </a>
+  <a href="https://www.javadoc.io/doc/com.lamergameryt/lamercaptcha">
+    <img alt="JavaDoc" src="https://javadoc.io/badge2/com.lamergameryt/lamercaptcha/javadoc.svg?style=flat-square" />
   </a>
   <img alt="GitHub Issues" src="https://img.shields.io/github/issues/lamergameryt/LamerCaptcha?style=flat-square" />
   <a href="https://www.apache.org/licenses/LICENSE-2.0.txt" target="_blank">
@@ -49,27 +52,17 @@ With Maven:
 
 ```xml
 <dependency>
-    <groupId>com.github.lamergameryt</groupId>
-    <artifactId>LamerCaptcha</artifactId>
-    <version>JITPACK-VERSION</version>
+    <groupId>com.lamergameryt</groupId>
+    <artifactId>lamercaptcha</artifactId>
+    <version>CENTRAL-VERSION</version>
 </dependency>
-```
-
-```xml
-<repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
-</repository>
 ```
 
 With Gradle:
 
 ```groovy
 dependencies {
-    implementation 'com.github.lamergameryt:LamerCaptcha:JITPACK-VERSION'
-}
-repositories {
-    maven { url 'https://jitpack.io' }
+    implementation 'com.lamergameryt:lamercaptcha:CENTRAL-VERSION'
 }
 ```
 
